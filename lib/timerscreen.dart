@@ -27,6 +27,22 @@ class TimerScreen extends StatefulWidget {
 class _TimerScreen extends State<TimerScreen>{
 
 
+  void run(){
+    if(widget.rounds > 0) { // already rounds
+      widget.rounds -= widget.rounds;
+      if(widget.working){ // working time
+
+      } else { // rest time
+
+      }
+    } else { //no more rounds
+
+    }
+
+
+  }
+
+
   void startWorkTimer() {
     if(widget.active) {
       const oneSec = const Duration(seconds: 1);
